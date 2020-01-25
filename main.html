@@ -5,10 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>weird_parts</title>
+    <style>
+      body{
+        background-color: rgb(245, 220, 220);
+      }
+      .details{
+        color: crimson; 
+        font-size: large;
+        padding: 10px;
+        }
+        .data{
+          padding-top:30px;
+          padding-bottom:30px;
+          padding-left: 10px;
+        }
+    </style>
 </head>
 <body>
   <h1 id="hea"> js weird parts</h1>
-  <button id="my_btn" style="color: aqua; width: 100px; height:50px;" onclick="changeColor(6,5)">Please Click</button>
+  <button id="my_btn" style="color:blue; width: 100px; height:50px;" onclick="changeColor(6,5)">Please Click</button>
+
+  <div">
+    <div class="data">
+      <label for="name">Enter Name:</label><input id="name"></input><br> 
+    </div>
+    <div class="details">
+      <div><label for="date">Date:</label><p id="date"></p></div>
+      <div><label for="grade">Grade:</label><p id="grade"></p></div>
+      <div><label for="grade">mood:</label><p id="mood"></p></div>
+    </div>
+  </div>
+
+
   <script src="app.js"></script>
 </body>
 </html>
