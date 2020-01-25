@@ -26,15 +26,15 @@
 // OBJECTS
 
 
-var person = new Object();
+// var person = new Object();
 
-person["firstName"] = "John";
-person["lastName"] = "Doe";
+// person["firstName"] = "John";
+// person["lastName"] = "Doe";
 
-var firstNameProperty = "firstName";
+// var firstNameProperty = "firstName";
 
-console.log(person);
-console.log(person["firstName"])
+// console.log(person);
+// console.log(person["firstName"])
 
 
 // OBJECTS SIMPLE FORM
@@ -48,18 +48,43 @@ console.log(person["firstName"])
 
 // THE DOT
 
-var person = {
-    firstName: "John",
-    lastName: "Doe",
-    address: {
-        city: "new york",
-        street: "11 main St.",
-        state: "MN"
-    }
+// var person = {
+//     firstName: "John",
+//     lastName: "Doe",
+//     address: {
+//         city: "new york",
+//         street: "11 main St.",
+//         state: "MN"
+//     }
+// }
+
+// console.log(person)
+
+
+// Concatenation ES6
+
+// let name = "Steve";
+// console.log(`Hello ${name}`)
+
+// var book = (title, author) => {
+//     return{
+//         title,
+//         author
+//     }
+// }
+
+// var bookDetail = book("Afrika Cry", "Malela");
+
+// console.log(bookDetail)
+
+
+// ES6 DESTRUCTURE
+
+const list = {
+    name: 'Shopping list',
+    items: [{milk:50},
+        'mandazi', 'sugar', 'tea'
+    ]
 }
-
-console.log(person)
-
-
-// OBJECT SHORTHAND
-
+const { name, items } = list;
+console.log(name, items)
